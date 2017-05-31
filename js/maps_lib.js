@@ -183,7 +183,7 @@ if ( $("#cbType15").is(':checked')) searchType += "15,";
 if ( $("#cbType16").is(':checked')) searchType += "16,";
 
 
-whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")";
+self.whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")";
         //-----end of custom filters-----
 
         self.getgeoCondition(address, function (geoCondition) {
