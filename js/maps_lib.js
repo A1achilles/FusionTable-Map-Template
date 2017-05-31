@@ -13,7 +13,7 @@
 
         // Found at https://console.developers.google.com/
         // Important! this key is for demonstration purposes. please register your own.
-        this.googleApiKey = options.googleApiKey || "",
+        this.googleApiKey = options.googleApiKey || "AIzaSyDdLLhmOcbQhX-vTwk003UIunt174DkWeU",
         
         // name of the location column in your Fusion Table.
         // NOTE: if your location column name has spaces in it, surround it with single quotes
@@ -163,7 +163,7 @@
         self.whereClause = self.locationColumn + " not equal to ''";
         
         //-----custom filters-----
-        var type_column = "'type'";
+        var type_column = "type";
 var searchType = type_column + " IN (-1,";
 if ( $("#cbType1").is(':checked')) searchType += "1,";
 if ( $("#cbType2").is(':checked')) searchType += "2,";
@@ -181,8 +181,6 @@ if ( $("#cbType13").is(':checked')) searchType += "13,";
 if ( $("#cbType14").is(':checked')) searchType += "14,";
 if ( $("#cbType15").is(':checked')) searchType += "15,";
 if ( $("#cbType16").is(':checked')) searchType += "16,";
-
-
 self.whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")";
         //-----end of custom filters-----
 
