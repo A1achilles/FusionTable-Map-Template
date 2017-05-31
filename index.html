@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='gr'>
   <head>
     <title>Searchable Map Template Demo</title>
     <meta charset='utf-8' />
@@ -36,12 +36,12 @@
     <div class='container-fluid'>
       <div class='row'>
         <div class='col-md-4'>
-          <p>This is a demo of <a href='http://derekeder.com'>Derek Eder's</a> <a href='http://derekeder.com/searchable_map_template/'>Searchable Map Template</a> using Google <a href='http://support.google.com/fusiontables/answer/2571232?hl=en&ref_topic=1652595'>Fusion Tables</a>. Use this section to give a little context to your map.</p>
+          <p>Ο χάρτης δημιουργήθηκε με βάση το πρότυπο του   <a href='http://derekeder.com'>Derek Eder's</a> <a href='http://derekeder.com/searchable_map_template/'>Searchable Map Template</a> using Google <a href='http://support.google.com/fusiontables/answer/2571232?hl=en&ref_topic=1652595'>Fusion Tables</a>. Στο χάρτη παρουσιάζονται τα σχολεία της Διεύθυνσης Δευτεροβάθμιας Εκπαίδευσης Α΄ Αθήνας,η ομάδα που ανήκουν,οι όμορες ομάδες,και  στοιχεία σχολείων (τηλέφωνα, ιστότοπος κ.α.).Τα στοιχεία έχουν αντληθεί από τον ιστότοπο της ΔΕ Α΄Αθήνας στις 28/5/2017.Η ομαδοποίηση των σχολείων έγινε σύμφωνα με την υπ’αριθμ.15/24-5-2017 Πράξη του Π.Υ.Σ.Δ.Ε Α΄Αθήνας</p>
           <div class='well'>
             <h4>
-              Address <small>(<a id='find_me' href='#'>find me</a>)</small>
+              Δείξε την περιοχή μου <small>(<a id='find_me' href='#'>find me</a>)</small>
             </h4>
-            <p>
+          <p>
               <input class='form-control' id='search_address' placeholder='Enter an address or an intersection' type='text' />
             </p>
             <p>
@@ -55,27 +55,123 @@
                 </select>
               </label>
             </p>
-
-            <br />
-            <h4>Custom filters and views</h4>
-            <p>Take a look at the <a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples'>wiki</a> to see how to add your own custom filters and views like:</p>
-            <div class='row'>
-              <div class='col-md-6'>
-                <ul>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-checkboxes'>Checkboxes</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-radiobuttons'>Radio buttons</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-drop-down-lists'>Drop down lists</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-textsearches'>Text searches</a></li>
-                </ul>
-              </div>
-              <div class='col-md-6'>
-                <ul>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-sliders'>Sliders</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-date-sliders'>Date sliders</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/List-search-results'>Results lists</a></li>
-                </ul>
-              </div>
-            </div>
+<h4>
+ Επιλογή ομάδας σχολείων
+</h4>
+<ul class='inputs-list unstyled'>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType1' />
+      <span class='filter-box filter-blue'></span>
+     Ομάδα1(A)
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType2' />
+      <span class='filter-box filter-green'></span>
+      Ομάδα2(B)
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType3' />
+      <span class='filter-box filter-red'></span>
+      Ομάδα3(C)
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType4' />
+      <span class='filter-box filter-blue'></span>
+     Ομάδα4(D)
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType5' />
+      <span class='filter-box filter-green'></span>
+      Ομάδα5(E)
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType6' />
+      <span class='filter-box filter-red'></span>
+      Ομάδα6(F)
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType7' />
+      <span class='filter-box filter-blue'></span>
+     Ομάδα7(G)
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType8' />
+      <span class='filter-box filter-green'></span>
+      Ομάδα8(H)
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType9' />
+      <span class='filter-box filter-red'></span>
+      Ομάδα9(I)
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType10' />
+      <span class='filter-box filter-blue'></span>
+     Ομάδα10(J)
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType11' />
+      <span class='filter-box filter-green'></span>
+      Ομάδα11(K)
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType12' />
+      <span class='filter-box filter-red'></span>
+      Ομάδα12(L)
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType13' />
+      <span class='filter-box filter-blue'></span>
+     Ομάδα13(M)
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType14' />
+      <span class='filter-box filter-green'></span>
+      Ομάδα14(N)
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType15' />
+      <span class='filter-box filter-red'></span>
+      Ομάδα15(O)
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType16' />
+      <span class='filter-box filter-red'></span>
+      Χωρίς ομάδα(X)
+    </label>
+  </li>
+</ul>
             <br />
             <a class='btn btn-primary' id='search' href='#'>
               <i class='glyphicon glyphicon-search'></i>
@@ -97,7 +193,8 @@
           </noscript>
           <div id='map_canvas'></div>
           <p class='pull-right'>
-            <a href='http://derekeder.com/searchable_map_template/'>Searchable Map Template</a> by <a href='http://derekeder.com'>Derek Eder</a>.
+            <a href='http://derekeder.com/searchable_map_template/'>Πρότυπο ΄χαρτη </a> απο τον  <a href='http://derekeder.com'>Derek Eder</a>.
+             <a href='http://http://users.sch.gr/emtsiopt/autosch/joomla15/index.php/actions/82-schoolsmap'>Προσαρμογή χάρτη  </a> απο τον  <a href='https://www.google.gr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjfnPGd15rUAhUJvBQKHYqcDckQFggoMAA&url=https%3A%2F%2Fplus.google.com%2F115219864490905173175&usg=AFQjCNFsEW_KRnHkZ-l8cnnz54INn99DwQ&sig2=oRCt58bSBojybPMCOJiCDA'>Manos Tsioptsias</a>.
         </p>
         </div>
       </div>
@@ -119,11 +216,11 @@
         
         $(function() {
           var myMap = new MapsLib({
-            fusionTableId:      "1m4Ez9xyTGfY2CU6O-UgEcPzlS0rnzLU93e4Faa0",
-            googleApiKey:       "AIzaSyA3FQFrNr5W2OEVmuENqhb2MBB2JabdaOY",
-            locationColumn:     "geometry",
-            map_center:         [41.8781136, -87.66677856445312],
-            locationScope:      "chicago"
+            fusionTableId:      "13tv2wTI9rPG7zeGMdGaexA8ASCd0KPoem9cCbJVd",
+            googleApiKey:       "AIzaSyDdLLhmOcbQhX-vTwk003UIunt174DkWeU",
+            locationColumn:     "address",
+            map_center:         [37.976822, 23.734404],
+            locationScope:      "Greece"
           });
 
           var autocomplete = new google.maps.places.Autocomplete(document.getElementById('search_address'));

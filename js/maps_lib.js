@@ -18,7 +18,7 @@
         // name of the location column in your Fusion Table.
         // NOTE: if your location column name has spaces in it, surround it with single quotes
         // example: locationColumn:     "'my location'",
-        this.locationColumn = options.locationColumn || "geometry";
+        this.locationColumn = options.locationColumn || "''";
         
         // appends to all address searches if not present
         this.locationScope = options.locationScope || "";
@@ -163,6 +163,25 @@
         self.whereClause = self.locationColumn + " not equal to ''";
         
         //-----custom filters-----
+       var type_column = "'Omada'";
+var searchType = type_column + " IN (-1,";
+if ( $("#cbType1").is(':checked')) searchType += "1,";
+if ( $("#cbType2").is(':checked')) searchType += "2,";
+if ( $("#cbType3").is(':checked')) searchType += "3,";
+if ( $("#cbType4").is(':checked')) searchType += "4,";
+if ( $("#cbType5").is(':checked')) searchType += "5,";
+if ( $("#cbType6").is(':checked')) searchType += "6,";
+if ( $("#cbType7").is(':checked')) searchType += "7,";
+if ( $("#cbType8").is(':checked')) searchType += "8,";
+if ( $("#cbType9").is(':checked')) searchType += "9,";
+if ( $("#cbType10").is(':checked')) searchType += "10,";
+if ( $("#cbType11").is(':checked')) searchType += "11,";
+if ( $("#cbType12").is(':checked')) searchType += "12,";
+if ( $("#cbType13").is(':checked')) searchType += "13,";
+if ( $("#cbType14").is(':checked')) searchType += "14,";
+if ( $("#cbType15").is(':checked')) searchType += "15,";
+if ( $("#cbType16").is(':checked')) searchType += "16,";
+self.whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")";
         //-----end of custom filters-----
 
         self.getgeoCondition(address, function (geoCondition) {
