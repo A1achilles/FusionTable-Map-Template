@@ -9,19 +9,19 @@
         this.searchRadius = options.searchRadius || 805; //in meters ~ 1/2 mile
 
         // the encrypted Table ID of your Fusion Table (found under File => About)
-        this.fusionTableId = options.fusionTableId || "13tv2wTI9rPG7zeGMdGaexA8ASCd0KPoem9cCbJVd",
+        this.fusionTableId = options.fusionTableId || "",
 
         // Found at https://console.developers.google.com/
         // Important! this key is for demonstration purposes. please register your own.
-        this.googleApiKey = options.googleApiKey || "AIzaSyDdLLhmOcbQhX-vTwk003UIunt174DkWeU",
+        this.googleApiKey = options.googleApiKey || "",
         
         // name of the location column in your Fusion Table.
         // NOTE: if your location column name has spaces in it, surround it with single quotes
         // example: locationColumn:     "'my location'",
-        this.locationColumn = options.locationColumn || "'address'";
+        this.locationColumn = options.locationColumn || "''";
         
         // appends to all address searches if not present
-        this.locationScope = options.locationScope || "Greece";
+        this.locationScope = options.locationScope || "";
 
         // zoom level when map is loaded (bigger is more zoomed in)
         this.defaultZoom = options.defaultZoom || 11; 
